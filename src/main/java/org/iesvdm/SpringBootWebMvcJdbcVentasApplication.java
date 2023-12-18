@@ -3,6 +3,7 @@ package org.iesvdm;
 import java.util.Optional;
 
 import org.iesvdm.dao.ClienteDAO;
+import org.iesvdm.dao.ComercialDAO;
 import org.iesvdm.modelo.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -17,6 +18,8 @@ public class SpringBootWebMvcJdbcVentasApplication implements CommandLineRunner{
 
 	@Autowired
 	private ClienteDAO clienteDAO;
+	@Autowired
+	private ComercialDAO comercialDAO;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootWebMvcJdbcVentasApplication.class, args);
